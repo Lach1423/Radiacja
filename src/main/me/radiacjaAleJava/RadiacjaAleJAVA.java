@@ -229,13 +229,6 @@ public final class RadiacjaAleJAVA extends JavaPlugin implements Listener {
         enterRegion(p);
     }
 
-    public void setColor(SignChangeEvent event, ChatColor color) {
-        for (int i = 0; i <= 2; i++) {
-            event.setLine(i, color + event.getLine(i));
-        }
-        event.setLine(3, "");
-    }
-
     @EventHandler
     public void onBrewEnd(BrewEvent event) {
         BrewerInventory inventory = event.getContents();
